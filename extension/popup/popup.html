@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-GPT</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+    #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 300px;
+        padding: 1rem;
+        color: black;
+    }
+    section.header {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    section.buttons {
+        width: 100%;
+    }
+    button {
+        margin: 0.2rem 0;
+        padding: 1rem 2rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: #343531;
+        color: aliceblue;
+    }
+    button:hover {
+        box-shadow: 0 0 0.5rem #343531;
+
+    }
+
+
+
+</style>
+
+<body>
+    <div id="app">
+
+        <section class="header">
+        <h1>Post Extension</h1>
+        </section>
+
+        <section class="buttons">    
+            <button id="btn-prompt">Send Prompt</button>
+            <button id="btn-render">Render Math</button>
+        </section>
+
+        </div>
+        
+</body>
+
+<script type="module" src="popup.js"></script>
+
+</html>
